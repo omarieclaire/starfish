@@ -1,0 +1,14 @@
+{
+  "name": "starfishhug",
+  "version": "1.0.0",
+  "description": "Simple web server for serving HTML files",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "osc": "^2.4.5",
+    "ws": "^8.18.3"
+  }
+}
