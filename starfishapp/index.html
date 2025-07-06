@@ -999,7 +999,7 @@
             inputValues[address] = value;
             let avgValue = avgValues();
             console.log("avgValue", avgValue);
-            if(avgValue > THRESHOLD){
+            if(avgValue < THRESHOLD){
                 upDown = true;
             }
             handleUpDown(upDown);
