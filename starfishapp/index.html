@@ -154,13 +154,22 @@
         let worldObjects = [];
         let backgroundShader;
         let loadedGLBModels = {};
-        let modelsToLoad = [
-            '6_26_2025 (1).glb',
-            '6_28_2025.glb', 
-            'camilla-thrilla.glb',
-            'dead-coral.glb',
-            'dinacam_test2.glb'
-        ];
+             let modelsToLoad = [
+        "6_26_2025 (1).glb",
+        "6_28_2025.glb",
+        "camilla-thrilla.glb",
+        "dead-coral.glb",
+        "dinacam_test2.glb",
+
+        "formation.glb",
+        "boule.glb",
+        "bumps.glb",
+        "baby_coral.glb",
+        "beautiful.glb",
+        "fish-house.glb",
+
+        "tendrils.glb",
+      ];
         let modelsLoaded = 0;
         
         // SIMPLIFIED AUDIO SYSTEM - SAMPLES ONLY
@@ -169,12 +178,19 @@
         
         // Model-specific sounds mapping
         const modelSounds = {
-            '6_26_2025__1_': 'sounds/sound1.mp3',
-            '6_28_2025': 'sounds/sound2.mp3',
-            'camilla_thrilla': 'sounds/sound3.mp3',
-            'dead_coral': 'sounds/sound4.mp3',
-            'dinacam_test2': 'sounds/sound5.mp3'
-        };
+        "6_26_2025__1_": "sounds/sound1.mp3",
+        "6_28_2025": "sounds/sound2.mp3",
+        camilla_thrilla: "sounds/sound3.mp3",
+        dead_coral: "sounds/sound4.mp3",
+        dinacam_test2: "sounds/sound5.mp3",
+        formation: "sounds/sound6.mp3",
+        // boule: "sounds/sound7.mp3",
+        // bumps: "sounds/sound8.mp3",
+        // baby_coral: "sounds/sound9.mp3",
+        // beautiful: "sounds/sound10.mp3",
+        // fish-house: "sounds/sound11.mp3",
+        // tendrils: "sounds/sound12.mp3"
+      };
         
         // Gentle, ocean-like movement
         const baseSpeed = 0.18;
@@ -226,16 +242,15 @@
 
         // Memory fragments
         const memoryTexts = [
-            "Brain Coral",
-            "Staghorn Coral",
-            "Elkhorn Coral",
-            "Fire Coral",
-            "Soft Coral",
-            "Table Coral",
-            "Finger Coral",
-            "Mushroom Coral",
-            "Star Coral",
-            "Plate Coral"
+            "Happy day my sunshine!",
+            "The ocean fixes everything",
+            "Words of a feather mouth together",
+            "The only way out is through",
+            "When I was born I had no coconut So what's mine is yours",
+            "ANENLALAMPACA",
+            "Hack the planet",
+            "Swim?",
+            "Swim!"
         ];
 
         let currentMemoryTimeout = null;
