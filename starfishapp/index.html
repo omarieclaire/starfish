@@ -137,6 +137,9 @@
     </div>
 
     <script type="module">
+
+        let THRESHOLD = .4
+
         import * as THREE from './js/node_modules/three/build/three.module.js';
         import { GLTFLoader } from './js/node_modules/three/examples/jsm/loaders/GLTFLoader.js';
 
@@ -981,7 +984,7 @@
             inputValues[address] = value;
             let avgValue = avgValues();
             console.log("avgValue", avgValue);
-            if(avgValue > .5){
+            if(avgValue > THRESHOLD){
                 upDown = true;
             }
             handleUpDown(upDown);
@@ -1008,6 +1011,9 @@
             prevUpDown = upDown;
             if(upDown){
                 console.log("down");
+                console.log("********** TIRGGER****************");
+                console.log("**************************");
+                console.log("**************************");
                 doSpacePressed();
             }else{
                 console.log("up");
